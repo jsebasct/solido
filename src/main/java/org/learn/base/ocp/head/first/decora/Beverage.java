@@ -4,7 +4,17 @@ public abstract class Beverage {
 
     protected String description = "Unknown Beverage";
 
-    protected abstract String getDescription();
+    /**
+     * already implmente for us
+     * @return
+     */
+    protected String getDescription() {
+        return description;
+    }
 
+    /**
+     * Need to implmeent
+     * @return
+     */
     protected abstract double cost();
 }

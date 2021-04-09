@@ -4,13 +4,13 @@ public abstract class CondimentDecorator extends Beverage {
 
     protected Beverage beverage;
 
-
     protected String getDescription() {
-        return this.description + " con " + beverage.getDescription();
+        return beverage.getDescription() + ", " + this.description;
     }
 
-//    @Override
-//    protected String cost() {
-//        ge
-//    }
+    /**
+     * All Decorators should implement the getDescription method
+     * @return
+     */
+//    public abstract String getDescription();
 }
