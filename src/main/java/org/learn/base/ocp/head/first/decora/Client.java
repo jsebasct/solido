@@ -22,7 +22,11 @@ public class Client {
         Mocha mocha = new Mocha(darkRoast);
         Whip whip = new Whip(mocha);
 
+        System.out.println("Cost: " + whip.cost());
+        System.out.println("Cost: " + whip.getDescription());
 
+        darkRoast.setSize(BeverageSize.VENTI);
+        System.out.println("\nCost with size");
         System.out.println("Cost: " + whip.cost());
         System.out.println("Cost: " + whip.getDescription());
     }

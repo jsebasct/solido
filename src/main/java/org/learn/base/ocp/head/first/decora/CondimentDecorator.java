@@ -13,4 +13,8 @@ public abstract class CondimentDecorator extends Beverage {
      * @return
      */
 //    public abstract String getDescription();
+
+    public BeverageSize getSize() {
+        return this.beverage.getSize();
+    }
 }
